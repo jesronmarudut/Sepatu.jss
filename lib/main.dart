@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sepatu/pages/edit_profile_page.dart';
 import 'package:sepatu/pages/home/chat_page.dart';
 import 'package:sepatu/pages/detail_chat_page.dart';
 import 'package:sepatu/pages/home/main_page.dart';
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         '/sign-up': (context) => SignUpPage(),
         '/home': (context) => MainPage(),
         '/detail_chat': (context) => DetailChatPage(),
+        '/edit-profile': (context) => EditProfilePage(),
       },
     );
   }

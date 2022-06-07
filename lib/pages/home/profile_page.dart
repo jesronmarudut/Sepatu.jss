@@ -30,14 +30,14 @@ class ProfilePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hallo, Jes',
+                        'Hallo, Luke',
                         style: primaryTextStyle.copyWith(
                           fontSize: 24,
                           fontWeight: semiBold,
                         ),
                       ),
                       Text(
-                        '@jsrnmrdt',
+                        '@lukeShaw23',
                         style: thirdTextStyle.copyWith(
                           fontSize: 16,
                         ),
@@ -45,9 +45,15 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                Image.asset(
-                  'assets/button_exit.png',
-                  width: 30,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, '/sign-in', (route) => false);
+                  },
+                  child: Image.asset(
+                    'assets/button_exit.png',
+                    width: 40,
+                  ),
                 ),
               ],
             ),
@@ -98,8 +104,13 @@ class ProfilePage extends StatelessWidget {
                   fontWeight: semiBold,
                 ),
               ),
-              menuItem(
-                'Edit Profile',
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/edit-profile');
+                },
+                child: menuItem(
+                  'Edit Profile',
+                ),
               ),
               menuItem(
                 'Your Orders',
