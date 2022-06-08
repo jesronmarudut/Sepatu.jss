@@ -40,7 +40,7 @@ class ProfilePage extends StatelessWidget {
                     Navigator.pushNamedAndRemoveUntil(
                         context, '/sign-in', (route) => false);
                   },
-                  child: Image.asset('assets/button_exit.png', width: 40),
+                  child: Image.asset('assets/button_exit.png', width: 30),
                 ),
               ],
             ),
