@@ -20,14 +20,14 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Hallo, Jes',
+                    'Hallo, Luke',
                     style: primaryTextStyle.copyWith(
                       fontSize: 24,
                       fontWeight: semiBold,
                     ),
                   ),
                   Text(
-                    '@jsrnmrdt',
+                    '@lukeShaw23',
                     style: subtitleTextStyle.copyWith(
                       fontSize: 16,
                     ),
@@ -91,7 +91,7 @@ class HomePage extends StatelessWidget {
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: subtitleColor),
+                  border: Border.all(color: warna3),
                   color: transparentColor,
                 ),
                 child: Text(
@@ -110,7 +110,7 @@ class HomePage extends StatelessWidget {
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: subtitleColor),
+                  border: Border.all(color: warna3),
                   color: transparentColor,
                 ),
                 child: Text(
@@ -129,7 +129,7 @@ class HomePage extends StatelessWidget {
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: subtitleColor),
+                  border: Border.all(color: warna3),
                   color: transparentColor,
                 ),
                 child: Text(
@@ -148,7 +148,7 @@ class HomePage extends StatelessWidget {
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: subtitleColor),
+                  border: Border.all(color: warna3),
                   color: transparentColor,
                 ),
                 child: Text(

@@ -37,17 +37,17 @@ class _MainPageState extends State<MainPage> {
           notchMargin: 10,
           clipBehavior: Clip.antiAlias,
           child: BottomNavigationBar(
-              backgroundColor: warna2,
-              currentIndex: currentIndex,
-              onTap: (value) {
-                print(value);
-                setState(() {
-                  currentIndex = value;
-                });
-              },
-              type: BottomNavigationBarType.fixed,
-              items: [
-                BottomNavigationBarItem(
+            backgroundColor: warna2,
+            currentIndex: currentIndex,
+            onTap: (value) {
+              print(value);
+              setState(() {
+                currentIndex = value;
+              });
+            },
+            type: BottomNavigationBarType.fixed,
+            items: [
+              BottomNavigationBarItem(
                   icon: Container(
                     margin: EdgeInsets.only(
                       top: 15,
@@ -59,9 +59,8 @@ class _MainPageState extends State<MainPage> {
                       color: currentIndex == 0 ? warna1 : Color(0xff504F5E),
                     ),
                   ),
-                  label: 'Home',
-                ),
-                BottomNavigationBarItem(
+                  label: 'Home'),
+              BottomNavigationBarItem(
                   icon: Container(
                     margin: EdgeInsets.only(
                       top: 15,
@@ -73,9 +72,8 @@ class _MainPageState extends State<MainPage> {
                       color: currentIndex == 1 ? warna1 : Color(0xff504F5E),
                     ),
                   ),
-                  label: 'Chat',
-                ),
-                BottomNavigationBarItem(
+                  label: 'Message'),
+              BottomNavigationBarItem(
                   icon: Container(
                     margin: EdgeInsets.only(
                       top: 15,
@@ -87,9 +85,8 @@ class _MainPageState extends State<MainPage> {
                       color: currentIndex == 2 ? warna1 : Color(0xff504F5E),
                     ),
                   ),
-                  label: 'Wishlist',
-                ),
-                BottomNavigationBarItem(
+                  label: 'Wishlist'),
+              BottomNavigationBarItem(
                   icon: Container(
                     margin: EdgeInsets.only(
                       top: 15,
@@ -101,9 +98,11 @@ class _MainPageState extends State<MainPage> {
                       color: currentIndex == 3 ? warna1 : Color(0xff504F5E),
                     ),
                   ),
-                  label: 'Profile',
-                ),
-              ]),
+                  label: 'Profile'),
+            ],
+            // selectedLabelStyle: priceTextStyle,1
+            selectedItemColor: warna1, //Ganti warna Label
+          ),
         ),
       );
     }

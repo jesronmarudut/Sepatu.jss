@@ -3,28 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 double defaultMargin = 30.0;
 
-Color primaryColor = Color(0xff6C5ECF);
-Color secondaryColor = Color(0xff38ABBE);
-Color alertColor = Color(0xffED6363);
-Color backgroundColor1 = Color(0xffECEDEF);
-Color backgroundColor2 = Color(0xffF1F1F1);
-Color backgroundColor3 = Color(0xff242231);
-Color backgroundColor4 = Color(0xff252836);
-Color backgroundColor5 = Color(0xff2B2844);
-Color backgroundColor6 = Color(0xffECEDEF);
-Color primaryTextColor = Color(0xff020202);
-Color secondaryTextColor = Color(0xff999999);
-Color subtitleColor = Color(0xff504F5E);
-Color blackColor = Color(0xff2E2E2E);
-
 Color warna1 = Color(0xffFFFFFF); //Pure Putih
 Color warna2 = Color(0xff000000); //Pure Hitam
 Color warna3 = Color(0xff504F5E); // Abu-abu
-Color warna4 = Color(0xffECEDEF);
+Color warna4 = Color(0xffECEDEF); //Putih level 2
 Color warna5 = Color(0xffF2F2F2); //Background TextBox
 Color warna6 = Color(0xff999999); //Background card product di chat
-Color priceColor = Color(0xffB11E31);
-Color transparentColor = Colors.transparent;
+Color priceColor = Color(0xffB11E31); // Merah
+Color transparentColor = Colors.transparent; //Transparemt
 
 TextStyle primaryTextStyle = GoogleFonts.poppins(
   color: warna2,
@@ -39,23 +25,11 @@ TextStyle thirdTextStyle = GoogleFonts.poppins(
 );
 
 TextStyle subtitleTextStyle = GoogleFonts.poppins(
-  color: subtitleColor,
+  color: warna3,
 );
 
 TextStyle priceTextStyle = GoogleFonts.poppins(
   color: priceColor,
-);
-
-TextStyle purpleTextStyle = GoogleFonts.poppins(
-  color: primaryColor,
-);
-
-TextStyle blackTextStyle = GoogleFonts.poppins(
-  color: blackColor,
-);
-
-TextStyle alertTextStyle = GoogleFonts.poppins(
-  color: alertColor,
 );
 
 FontWeight light = FontWeight.w300;

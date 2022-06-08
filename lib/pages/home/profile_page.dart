@@ -9,22 +9,16 @@ class ProfilePage extends StatelessWidget {
         backgroundColor: warna4,
         automaticallyImplyLeading: false,
         elevation: 0,
-        flexibleSpace: SafeArea(
+        flexibleSpace: Container(
+          // height: 10,
           child: Container(
-            padding: EdgeInsets.all(
-              defaultMargin,
-            ),
+            padding: EdgeInsets.all(defaultMargin),
             child: Row(
               children: [
                 ClipOval(
-                  child: Image.asset(
-                    'assets/image_profile.png',
-                    width: 64,
-                  ),
+                  child: Image.asset('assets/image_profile.png', width: 64),
                 ),
-                SizedBox(
-                  width: 16,
-                ),
+                SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,15 +26,11 @@ class ProfilePage extends StatelessWidget {
                       Text(
                         'Hallo, Luke',
                         style: primaryTextStyle.copyWith(
-                          fontSize: 24,
-                          fontWeight: semiBold,
-                        ),
+                            fontSize: 24, fontWeight: semiBold),
                       ),
                       Text(
                         '@lukeShaw23',
-                        style: thirdTextStyle.copyWith(
-                          fontSize: 16,
-                        ),
+                        style: thirdTextStyle.copyWith(fontSize: 16),
                       ),
                     ],
                   ),
@@ -50,10 +40,7 @@ class ProfilePage extends StatelessWidget {
                     Navigator.pushNamedAndRemoveUntil(
                         context, '/sign-in', (route) => false);
                   },
-                  child: Image.asset(
-                    'assets/button_exit.png',
-                    width: 40,
-                  ),
+                  child: Image.asset('assets/button_exit.png', width: 40),
                 ),
               ],
             ),
@@ -72,10 +59,7 @@ class ProfilePage extends StatelessWidget {
               text,
               style: thirdTextStyle.copyWith(fontSize: 13),
             ),
-            Icon(
-              Icons.chevron_right,
-              color: warna2,
-            ),
+            Icon(Icons.chevron_right, color: warna2),
           ],
         ),
       );
@@ -88,55 +72,33 @@ class ProfilePage extends StatelessWidget {
           padding: EdgeInsets.symmetric(
             horizontal: defaultMargin,
           ),
-          decoration: BoxDecoration(
-            color: warna1,
-          ),
+          decoration: BoxDecoration(color: warna1),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: 20),
               Text(
                 'Account',
                 style: primaryTextStyle.copyWith(
-                  fontSize: 16,
-                  fontWeight: semiBold,
-                ),
+                    fontSize: 16, fontWeight: semiBold),
               ),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/edit-profile');
                 },
-                child: menuItem(
-                  'Edit Profile',
-                ),
+                child: menuItem('Edit Profile'),
               ),
-              menuItem(
-                'Your Orders',
-              ),
-              menuItem(
-                'Help',
-              ),
-              SizedBox(
-                height: 30,
-              ),
+              menuItem('Your Orders'),
+              menuItem('Help'),
+              SizedBox(height: 30),
               Text(
                 'General',
                 style: primaryTextStyle.copyWith(
-                  fontSize: 16,
-                  fontWeight: semiBold,
-                ),
+                    fontSize: 16, fontWeight: semiBold),
               ),
-              menuItem(
-                'Privacy & Policy',
-              ),
-              menuItem(
-                'Term of Service',
-              ),
-              menuItem(
-                'Rate App',
-              ),
+              menuItem('Privacy & Policy'),
+              menuItem('Term of Service'),
+              menuItem('Rate App'),
             ],
           ),
         ),
