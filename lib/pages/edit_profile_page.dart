@@ -9,7 +9,9 @@ class EditProfilePage extends StatelessWidget {
         leading: IconButton(
           color: warna2,
           icon: Icon(Icons.close),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
         backgroundColor: warna4,
         elevation: 0,
@@ -28,6 +30,31 @@ class EditProfilePage extends StatelessWidget {
       return Container(
         margin: EdgeInsets.only(top: 30),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Name',
+              style: primaryTextStyle.copyWith(fontSize: 13),
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                hintText: 'Luke Shaw',
+                hintStyle: primaryTextStyle,
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: warna4),
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    Widget usernameInput() {
+      return Container(
+        margin: EdgeInsets.only(top: 30),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               'Username',
@@ -35,7 +62,31 @@ class EditProfilePage extends StatelessWidget {
             ),
             TextFormField(
               decoration: InputDecoration(
-                hintText: 'Alex Keinnzal',
+                hintText: '@lukeShaw23',
+                hintStyle: primaryTextStyle,
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: warna4),
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    Widget emailInput() {
+      return Container(
+        margin: EdgeInsets.only(top: 30),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Email Address',
+              style: primaryTextStyle.copyWith(fontSize: 13),
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                hintText: 'lukeshaw23@gmail.com',
                 hintStyle: primaryTextStyle,
                 enabledBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: warna4),
@@ -65,6 +116,9 @@ class EditProfilePage extends StatelessWidget {
                 ),
               ),
             ),
+            nameInput(),
+            usernameInput(),
+            emailInput(),
           ],
         ),
       );
@@ -74,6 +128,7 @@ class EditProfilePage extends StatelessWidget {
       backgroundColor: warna1,
       appBar: header(),
       body: content(),
+      resizeToAvoidBottomInset: false,
     );
   }
 }
