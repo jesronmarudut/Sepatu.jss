@@ -3,6 +3,7 @@ import 'package:sepatu/pages/edit_profile_page.dart';
 import 'package:sepatu/pages/home/chat_page.dart';
 import 'package:sepatu/pages/detail_chat_page.dart';
 import 'package:sepatu/pages/home/main_page.dart';
+import 'package:sepatu/pages/product_page.dart';
 import 'package:sepatu/pages/sign_in_page.dart';
 import 'package:sepatu/pages/sign_up_page.dart';
 import 'package:sepatu/pages/splash_page.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/home': (context) => MainPage(),
         '/detail_chat': (context) => DetailChatPage(),
         '/edit-profile': (context) => EditProfilePage(),
+        '/product': (context) => ProductPage(),
       },
     );
   }
