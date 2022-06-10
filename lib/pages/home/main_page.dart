@@ -129,6 +129,7 @@ class _MainPageState extends State<MainPage> {
 
     return Scaffold(
       extendBody: true, //membuat notch transparan
+      // backgroundColor: currentIndex == 0 ? warna1 : priceColor,
       backgroundColor: warna1,
       floatingActionButton: cartButton(),
       floatingActionButtonLocation:
