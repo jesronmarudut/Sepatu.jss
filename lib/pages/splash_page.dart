@@ -25,8 +25,8 @@ class _SplashPageState extends State<SplashPage> {
       backgroundColor: warna1,
       body: Center(
         child: Container(
-          width: 300,
-          height: 300,
+          width: 700,
+          height: 700,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
