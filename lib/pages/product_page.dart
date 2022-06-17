@@ -1,4 +1,4 @@
-import 'dart:html';
+// import 'dart:html';
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -29,9 +29,68 @@ class _ProductPageState extends State<ProductPage> {
   ];
 
   int currentIndex = 0;
+  bool isWishlist = false;
 
   @override
   Widget build(BuildContext context) {
+    Future<void> showSuccesDialog() async {
+      return showDialog(
+        context: context,
+        builder: (BuildContext context) => Container(
+          width: MediaQuery.of(context).size.width - (12 * defaultMargin),
+          child: AlertDialog(
+            backgroundColor: warna1,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+            content: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Align(
+                      alignment: Alignment.centerRight,
+                      child: GestureDetector(
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: Icon(Icons.close, color: warna2))),
+                  Image.asset('assets/icon_success.png', width: 100),
+                  SizedBox(height: 12),
+                  Text(
+                    'Congratss!',
+                    style: primaryTextStyle.copyWith(
+                        fontSize: 18, fontWeight: semiBold),
+                  ),
+                  SizedBox(height: 12),
+                  Text(
+                    'Item added successfully',
+                    style: primaryTextStyle,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    width: 154,
+                    height: 44,
+                    child: TextButton(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        backgroundColor: warna2,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                      ),
+                      child: Text('View My Cart',
+                          style: secondaryTextStyle.copyWith(
+                              fontSize: 16, fontWeight: medium)),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
     Widget indicator(int index) {
       return Container(
           width: currentIndex == index
@@ -139,7 +198,29 @@ class _ProductPageState extends State<ProductPage> {
                       ],
                     ),
                   ),
-                  Image.asset('assets/button_wishlist.png', width: 46),
+                  GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          isWishlist = !isWishlist;
+                        });
+                        if (isWishlist) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              backgroundColor: warna7,
+                              content: Text('Has been added to the wishtlist',
+                                  textAlign: TextAlign.center)));
+                        } else {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              backgroundColor: warna8,
+                              content: Text(
+                                  'Has been removed from the wishtlist',
+                                  textAlign: TextAlign.center)));
+                        }
+                      },
+                      child: Image.asset(
+                          isWishlist
+                              ? 'assets/button_wishlist_blue.png'
+                              : 'assets/button_wishlist.png',
+                          width: 40)),
                 ],
               ),
             ),
@@ -224,25 +305,30 @@ class _ProductPageState extends State<ProductPage> {
               margin: EdgeInsets.all(defaultMargin),
               child: Row(
                 children: [
-                  Container(
-                    width: 50,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(
-                          'assets/button_chat.png',
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/detail_chat');
+                    },
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/button_chat.png'),
                         ),
                       ),
                     ),
                   ),
                   SizedBox(
-                    width: 16,
+                    width: 14,
                   ),
                   Expanded(
                     child: Container(
-                      height: 56,
+                      height: 50,
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          showSuccesDialog();
+                        },
                         style: TextButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12)),
@@ -250,7 +336,7 @@ class _ProductPageState extends State<ProductPage> {
                         child: Text(
                           'Add to Cart',
                           style: primaryTextStyle.copyWith(
-                              fontSize: 16, fontWeight: semiBold),
+                              fontSize: 16, fontWeight: bold),
                         ),
                       ),
                     ),

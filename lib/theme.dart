@@ -9,6 +9,8 @@ Color warna3 = Color(0xff504F5E); // Abu-abu
 Color warna4 = Color(0xffECEDEF); //Putih level 2
 Color warna5 = Color(0xffF2F2F2); //Background TextBox
 Color warna6 = Color(0xff999999); //Background card product di chat
+Color warna7 = Color(0xff00C897); //Success
+Color warna8 = Color(0xffB33030); //Failed
 Color priceColor = Color(0xffB11E31); // Merah
 Color transparentColor = Colors.transparent; //Transparemt
 
