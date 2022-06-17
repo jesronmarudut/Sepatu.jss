@@ -25,10 +25,10 @@ class ProductCard extends StatelessWidget {
               height: 30,
             ),
             Image.asset(
-              'assets/image_shoes.png',
+              'assets/image_shoes7.png',
               width: 215,
               height: 150,
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
             ),
             Container(
               margin: EdgeInsets.symmetric(
@@ -47,7 +47,7 @@ class ProductCard extends StatelessWidget {
                     height: 6,
                   ),
                   Text(
-                    'Adidas Stan Smith',
+                    'Converse Black Edition',
                     style: primaryTextStyle.copyWith(
                       fontSize: 18,
                       fontWeight: semiBold,
@@ -58,7 +58,7 @@ class ProductCard extends StatelessWidget {
                     height: 6,
                   ),
                   Text(
-                    'Rp 899.999',
+                    'Rp 876.543',
                     style: primaryTextStyle.copyWith(
                       fontSize: 14,
                       fontWeight: medium,

@@ -80,8 +80,8 @@ class _MainPageState extends State<MainPage> {
                       bottom: 7.5,
                     ),
                     child: Image.asset(
-                      'assets/icon_wishlist.png',
-                      width: 21,
+                      'assets/icon_wish.png',
+                      width: 20,
                       color: currentIndex == 2 ? warna1 : Color(0xff504F5E),
                     ),
                   ),

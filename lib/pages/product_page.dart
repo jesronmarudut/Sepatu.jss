@@ -1,5 +1,3 @@
-// import 'dart:html';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:sepatu/theme.dart';
@@ -11,21 +9,20 @@ class ProductPage extends StatefulWidget {
 
 class _ProductPageState extends State<ProductPage> {
   List images = [
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
-    'assets/image_shoes.png'
+    'assets/image_shoes7.png',
+    'assets/image_shoes7.png',
+    'assets/image_shoes7.png',
   ];
 
   List familiarShoes = [
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
-    'assets/image_shoes.png',
+    'assets/image_shoes9.png',
+    'assets/image_shoes10.png',
+    'assets/image_shoes2.png',
+    'assets/image_shoes3.png',
+    'assets/image_shoes4.png',
+    'assets/image_shoes5.png',
+    'assets/image_shoes6.png',
+    'assets/image_shoes8.png',
   ];
 
   int currentIndex = 0;
@@ -55,33 +52,24 @@ class _ProductPageState extends State<ProductPage> {
                           child: Icon(Icons.close, color: warna2))),
                   Image.asset('assets/icon_success.png', width: 100),
                   SizedBox(height: 12),
-                  Text(
-                    'Congratss!',
-                    style: primaryTextStyle.copyWith(
-                        fontSize: 18, fontWeight: semiBold),
-                  ),
+                  Text('Congratss!',
+                      style: primaryTextStyle.copyWith(
+                          fontSize: 18, fontWeight: semiBold)),
                   SizedBox(height: 12),
-                  Text(
-                    'Item added successfully',
-                    style: primaryTextStyle,
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
+                  Text('Item added successfully', style: primaryTextStyle),
+                  SizedBox(height: 20),
                   Container(
                     width: 154,
                     height: 44,
                     child: TextButton(
-                      onPressed: () {},
-                      style: TextButton.styleFrom(
-                        backgroundColor: warna2,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12)),
-                      ),
-                      child: Text('View My Cart',
-                          style: secondaryTextStyle.copyWith(
-                              fontSize: 16, fontWeight: medium)),
-                    ),
+                        onPressed: () {},
+                        style: TextButton.styleFrom(
+                            backgroundColor: warna2,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12))),
+                        child: Text('View My Cart',
+                            style: secondaryTextStyle.copyWith(
+                                fontSize: 16, fontWeight: medium))),
                   ),
                 ],
               ),
@@ -142,8 +130,8 @@ class _ProductPageState extends State<ProductPage> {
                 .map(
                   (image) => Image.asset(image,
                       width: MediaQuery.of(context).size.width,
-                      height: 310,
-                      fit: BoxFit.cover),
+                      height: 350,
+                      fit: BoxFit.contain),
                 )
                 .toList(),
             options: CarouselOptions(
@@ -190,10 +178,10 @@ class _ProductPageState extends State<ProductPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Adidas Stan Smith',
+                        Text('Converse Black Edition',
                             style: secondaryTextStyle.copyWith(
                                 fontSize: 18, fontWeight: semiBold)),
-                        Text('Casual',
+                        Text('Sneaker',
                             style: thirdTextStyle.copyWith(fontSize: 12)),
                       ],
                     ),
@@ -217,10 +205,11 @@ class _ProductPageState extends State<ProductPage> {
                         }
                       },
                       child: Image.asset(
-                          isWishlist
-                              ? 'assets/button_wishlist_blue.png'
-                              : 'assets/button_wishlist.png',
-                          width: 40)),
+                        isWishlist
+                            ? 'assets/icon_wishlist_blue.png'
+                            : 'assets/icon_wishlist.png',
+                        width: 40,
+                      )),
                 ],
               ),
             ),
