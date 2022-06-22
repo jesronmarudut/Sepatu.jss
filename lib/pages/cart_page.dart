@@ -1,6 +1,5 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'package:sepatu/pages/widgets/cart_card.dart';
 import 'package:sepatu/theme.dart';
 
 class CartPage extends StatelessWidget {
@@ -63,10 +62,17 @@ class CartPage extends StatelessWidget {
       );
     }
 
+    Widget content() {
+      return ListView(
+        padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+        children: [CartCard()],
+      );
+    }
+
     return Scaffold(
       backgroundColor: warna1,
       appBar: header(),
-      body: emptyCart(),
+      body: content(),
     );
   }
 }

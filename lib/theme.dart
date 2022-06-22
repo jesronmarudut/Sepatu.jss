@@ -11,7 +11,7 @@ Color warna5 = Color(0xffF2F2F2); //Background TextBox
 Color warna6 = Color(0xff999999); //Background card product di chat
 Color warna7 = Color(0xff00C897); //Success
 Color warna8 = Color(0xffB33030); //Failed
-Color priceColor = Color(0xffB11E31); // Merah
+Color priceColor = Color(0xffE00D0D); // Merah
 Color transparentColor = Colors.transparent; //Transparemt
 
 TextStyle primaryTextStyle = GoogleFonts.poppins(
