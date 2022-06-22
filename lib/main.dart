@@ -8,6 +8,7 @@ import 'package:sepatu/pages/product_page.dart';
 import 'package:sepatu/pages/sign_in_page.dart';
 import 'package:sepatu/pages/sign_up_page.dart';
 import 'package:sepatu/pages/splash_page.dart';
+import 'package:sepatu/pages/widgets/checkout_page.dart';
 import 'theme.dart';
 
 void main() => runApp(MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/edit-profile': (context) => EditProfilePage(),
         '/product': (context) => ProductPage(),
         '/cart': (context) => CartPage(),
+        '/checkout': (context) => CheckoutPage(),
       },
     );
   }
