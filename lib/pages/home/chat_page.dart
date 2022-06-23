@@ -58,25 +58,20 @@ class ChatPage extends StatelessWidget {
               Container(
                 height: 44,
                 child: TextButton(
-                  onPressed: () {},
-                  style: TextButton.styleFrom(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 24,
-                      vertical: 10,
+                    onPressed: () {},
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 24,
+                        vertical: 10,
+                      ),
+                      backgroundColor: warna2,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
                     ),
-                    backgroundColor: warna2,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: Text(
-                    'Explore Store',
-                    style: secondaryTextStyle.copyWith(
-                      fontSize: 16,
-                      fontWeight: bold,
-                    ),
-                  ),
-                ),
+                    child: Text('Explore Store',
+                        style: secondaryTextStyle.copyWith(
+                            fontSize: 16, fontWeight: bold))),
               )
             ],
           ),

@@ -1,4 +1,4 @@
-#Sat Jun 18 00:46:58 ICT 2022
+#Fri Jun 24 03:21:15 ICT 2022
 base.0=D\:\\Flutter\\sepatu\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

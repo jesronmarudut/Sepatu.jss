@@ -15,6 +15,7 @@ class _ProductPageState extends State<ProductPage> {
   ];
 
   List familiarShoes = [
+    'assets/image_shoes1.png',
     'assets/image_shoes9.png',
     'assets/image_shoes10.png',
     'assets/image_shoes2.png',
