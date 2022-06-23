@@ -16,9 +16,9 @@ class CheckoutSuccesPage extends StatelessWidget {
     Widget content() {
       return Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset('assets/icon_empty_cart.png', width: 80),
+            Image.asset('assets/image_empty.png', width: 250),
             SizedBox(height: 20),
             Text(
               'You made a transaction',
@@ -27,7 +27,7 @@ class CheckoutSuccesPage extends StatelessWidget {
             ),
             SizedBox(height: 12),
             Text('Stay at home while we\nprepare yout dream shoes',
-                style: secondaryTextStyle, textAlign: TextAlign.center),
+                style: thirdTextStyle, textAlign: TextAlign.center),
             Container(
               width: 196,
               height: 44,
@@ -60,8 +60,8 @@ class CheckoutSuccesPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12))),
                 child: Text(
                   'View My Order',
-                  style: secondaryTextStyle.copyWith(
-                      fontSize: 16, fontWeight: medium, color: warna6),
+                  style: primaryTextStyle.copyWith(
+                      fontSize: 16, fontWeight: medium, color: warna1),
                 ),
               ),
             ),
@@ -73,6 +73,7 @@ class CheckoutSuccesPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: warna1,
       appBar: header(),
+      body: content(),
     );
   }
 }
