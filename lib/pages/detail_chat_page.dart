@@ -1,5 +1,3 @@
-// import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:sepatu/pages/widgets/chat_bubble.dart';
 import 'package:sepatu/theme.dart';
