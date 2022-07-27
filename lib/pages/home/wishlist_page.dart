@@ -9,10 +9,7 @@ class WishlistPage extends StatelessWidget {
       return AppBar(
         backgroundColor: warna4,
         centerTitle: true,
-        title: Text(
-          'Favorite',
-          style: primaryTextStyle,
-        ),
+        title: Text('Wishlist', style: primaryTextStyle),
         elevation: 12,
         automaticallyImplyLeading: false, //buat button back hilang
       );
@@ -26,40 +23,22 @@ class WishlistPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Image.asset(
-                'assets/image_wishlist.png',
-                width: 250,
-                height: 250,
-              ),
-              SizedBox(
-                height: 10,
-              ),
+              Image.asset('assets/image_wishlist.png', width: 250, height: 250),
+              SizedBox(height: 10),
               Text(
                 'You don\'t have a dream item?',
-                style: primaryTextStyle.copyWith(
-                  fontSize: 16,
-                  fontWeight: medium,
-                ),
+                style:
+                    primaryTextStyle.copyWith(fontSize: 16, fontWeight: medium),
               ),
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                'Let\'s find your favorite item',
-                style: thirdTextStyle,
-              ),
-              SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: 10),
+              Text('Let\'s find your favorite item', style: thirdTextStyle),
+              SizedBox(height: 20),
               Container(
                 height: 44,
                 child: TextButton(
                   onPressed: () {},
                   style: TextButton.styleFrom(
-                    padding: EdgeInsets.symmetric(
-                      vertical: 10,
-                      horizontal: 24,
-                    ),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 24),
                     backgroundColor: warna2,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -68,9 +47,7 @@ class WishlistPage extends StatelessWidget {
                   child: Text(
                     'Explore Store',
                     style: secondaryTextStyle.copyWith(
-                      fontSize: 16,
-                      fontWeight: bold,
-                    ),
+                        fontSize: 16, fontWeight: bold),
                   ),
                 ),
               ),
@@ -85,9 +62,7 @@ class WishlistPage extends StatelessWidget {
         child: Container(
           color: warna1,
           child: ListView(
-            padding: EdgeInsets.symmetric(
-              horizontal: defaultMargin,
-            ),
+            padding: EdgeInsets.symmetric(horizontal: defaultMargin),
             children: [
               WishlistCard(),
               WishlistCard(),
@@ -101,8 +76,8 @@ class WishlistPage extends StatelessWidget {
     return Column(
       children: [
         header(),
-        emptyWishlist(),
-        // content(),
+        // emptyWishlist(),
+        content(),
       ],
     );
   }

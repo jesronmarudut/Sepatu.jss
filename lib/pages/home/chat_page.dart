@@ -17,7 +17,7 @@ class ChatPage extends StatelessWidget {
             fontWeight: medium,
           ),
         ),
-        elevation: 0, //untuk menghilangkan bayangan di Title
+        elevation: 0.5, //untuk menghilangkan bayangan di Title
         automaticallyImplyLeading: false, //logo back hilang
       );
     }
@@ -100,8 +100,8 @@ class ChatPage extends StatelessWidget {
     return Column(
       children: [
         header(),
-        // content(),
-        emptyChat(),
+        content(),
+        // emptyChat(),
       ],
     );
   }

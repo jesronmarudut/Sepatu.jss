@@ -5,7 +5,7 @@ import 'package:sepatu/theme.dart';
 class ChatBubble extends StatelessWidget {
   final String text;
   final bool isSender;
-  final bool product; //untuk tampilan product ada ata tidak
+  final bool product; //untuk tampilan product ada atau tidak
 
   ChatBubble({
     this.isSender = false,
@@ -35,10 +35,7 @@ class ChatBubble extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
-                  child: Image.asset(
-                    'assets/image_shoes6.png',
-                    width: 70,
-                  ),
+                  child: Image.asset('assets/image_shoes6.png', width: 70),
                 ),
                 SizedBox(
                   width: 8,
@@ -49,13 +46,9 @@ class ChatBubble extends StatelessWidget {
                     children: [
                       Text(
                         'Nike Air Max',
-                        style: primaryTextStyle.copyWith(
-                          fontWeight: semiBold,
-                        ),
+                        style: primaryTextStyle.copyWith(fontWeight: semiBold),
                       ),
-                      SizedBox(
-                        height: 4,
-                      ),
+                      SizedBox(height: 4),
                       Text(
                         'Rp 549.999',
                         style: primaryTextStyle.copyWith(fontWeight: medium),
@@ -96,10 +89,7 @@ class ChatBubble extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  child: Text(
-                    'Buy Now',
-                    style: secondaryTextStyle,
-                  ),
+                  child: Text('Buy Now', style: secondaryTextStyle),
                 ),
               ],
             ),
@@ -124,25 +114,17 @@ class ChatBubble extends StatelessWidget {
                 child: Container(
                   // Constraints untuk menampilkan teks 60%
                   constraints: BoxConstraints(
-                    maxWidth: MediaQuery.of(context).size.width * 0.6,
-                  ),
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 12,
-                  ),
+                      maxWidth: MediaQuery.of(context).size.width * 0.6),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(isSender ? 12 : 0),
-                      topRight: Radius.circular(isSender ? 0 : 12),
-                      bottomLeft: Radius.circular(12),
-                      bottomRight: Radius.circular(12),
-                    ),
-                    color: isSender ? warna4 : warna4,
-                  ),
-                  child: Text(
-                    text,
-                    style: primaryTextStyle,
-                  ),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(isSender ? 12 : 0),
+                        topRight: Radius.circular(isSender ? 0 : 12),
+                        bottomLeft: Radius.circular(12),
+                        bottomRight: Radius.circular(12),
+                      ),
+                      color: isSender ? warna4 : warna4),
+                  child: Text(text, style: primaryTextStyle),
                 ),
               ),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:sepatu/pages/widgets/loading_button.dart';
 import 'package:sepatu/providers/auth_provider.dart';
 import 'package:sepatu/theme.dart';
 
@@ -21,6 +22,16 @@ class SignUpPage extends StatelessWidget {
         password: passwordController.text,
       )) {
         Navigator.pushNamed(context, '/home');
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: warna8,
+            content: Text(
+              'Gagal Register!',
+              textAlign: TextAlign.center,
+            ),
+          ),
+        );
       }
     }
 
@@ -269,6 +280,8 @@ class SignUpPage extends StatelessWidget {
     }
 
     Widget signUpButton() {
+      return LoadingButton();
+
       return Container(
         height: 50,
         width: double.infinity, //Atur lebar box nya

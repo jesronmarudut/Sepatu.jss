@@ -6,9 +6,9 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget header() {
       return AppBar(
-        backgroundColor: warna4,
+        backgroundColor: warna1,
         automaticallyImplyLeading: false,
-        elevation: 0,
+        elevation: 0.5,
         flexibleSpace: Container(
           // height: 10,
           child: Container(
@@ -69,9 +69,7 @@ class ProfilePage extends StatelessWidget {
       return Expanded(
         child: Container(
           width: double.infinity,
-          padding: EdgeInsets.symmetric(
-            horizontal: defaultMargin,
-          ),
+          padding: EdgeInsets.symmetric(horizontal: defaultMargin),
           decoration: BoxDecoration(color: warna1),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

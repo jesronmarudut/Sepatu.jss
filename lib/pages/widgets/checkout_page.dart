@@ -11,10 +11,7 @@ class CheckoutPage extends StatelessWidget {
         foregroundColor: warna2,
         elevation: 0,
         centerTitle: true,
-        title: Text(
-          'Checkout Details',
-          style: primaryTextStyle,
-        ),
+        title: Text('Checkout Details', style: primaryTextStyle),
       );
     }
 
@@ -55,18 +52,10 @@ class CheckoutPage extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Image.asset(
-                          'assets/icon_store_location.png',
-                          width: 40,
-                        ),
-                        Image.asset(
-                          'assets/icon_line.png',
-                          height: 30,
-                        ),
-                        Image.asset(
-                          'assets/icon_your_address.png',
-                          width: 40,
-                        ),
+                        Image.asset('assets/icon_store_location.png',
+                            width: 40),
+                        Image.asset('assets/icon_line.png', height: 30),
+                        Image.asset('assets/icon_your_address.png', width: 40),
                       ],
                     ),
                     SizedBox(
@@ -112,9 +101,7 @@ class CheckoutPage extends StatelessWidget {
                 Text(
                   'Payment Summary',
                   style: primaryTextStyle.copyWith(
-                    fontSize: 16,
-                    fontWeight: medium,
-                  ),
+                      fontSize: 16, fontWeight: medium),
                 ),
                 SizedBox(height: 12),
                 Row(

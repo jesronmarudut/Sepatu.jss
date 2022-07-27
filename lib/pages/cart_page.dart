@@ -20,18 +20,12 @@ class CartPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset(
-              'assets/image_empty.png',
-              width: 250,
-              height: 250,
-            ),
+            Image.asset('assets/image_empty.png', width: 250, height: 250),
             SizedBox(height: 10),
             Text(
               'Opss! Your Cart is Empty',
-              style: primaryTextStyle.copyWith(
-                fontSize: 16,
-                fontWeight: medium,
-              ),
+              style:
+                  primaryTextStyle.copyWith(fontSize: 16, fontWeight: medium),
             ),
             SizedBox(height: 10),
             Text('Let\'s find your favorite shoes', style: thirdTextStyle),
@@ -108,10 +102,7 @@ class CartPage extends StatelessWidget {
                     Text('Continue to Checkout',
                         style: secondaryTextStyle.copyWith(
                             fontSize: 16, fontWeight: semiBold)),
-                    Icon(
-                      Icons.arrow_forward,
-                      color: warna1,
-                    )
+                    Icon(Icons.arrow_forward, color: warna1)
                   ],
                 ),
               ),

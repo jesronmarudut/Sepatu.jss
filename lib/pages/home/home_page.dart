@@ -22,15 +22,11 @@ class HomePage extends StatelessWidget {
                   Text(
                     'Hallo, Luke',
                     style: primaryTextStyle.copyWith(
-                      fontSize: 24,
-                      fontWeight: semiBold,
-                    ),
+                        fontSize: 24, fontWeight: semiBold),
                   ),
                   Text(
                     '@lukeShaw23',
-                    style: subtitleTextStyle.copyWith(
-                      fontSize: 16,
-                    ),
+                    style: subtitleTextStyle.copyWith(fontSize: 16),
                   ),
                 ],
               ),
@@ -62,101 +58,69 @@ class HomePage extends StatelessWidget {
           child: Row(
             children: [
               SizedBox(
-                //sizebox biar ada margin sebelah kiri
-                width: defaultMargin,
-              ),
+                  //sizebox biar ada margin sebelah kiri
+                  width: defaultMargin),
               Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10,
-                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: warna2,
-                ),
+                    borderRadius: BorderRadius.circular(12), color: warna2),
                 child: Text(
                   'All Shoes',
                   style: secondaryTextStyle.copyWith(
-                    fontSize: 13,
-                    fontWeight: medium,
-                  ),
+                      fontSize: 13, fontWeight: medium),
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10,
-                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: warna3),
-                  color: transparentColor,
-                ),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: warna3),
+                    color: transparentColor),
                 child: Text(
                   'Running',
                   style: subtitleTextStyle.copyWith(
-                    fontSize: 13,
-                    fontWeight: medium,
-                  ),
+                      fontSize: 13, fontWeight: medium),
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10,
-                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: warna3),
-                  color: transparentColor,
-                ),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: warna3),
+                    color: transparentColor),
                 child: Text(
                   'Training',
                   style: subtitleTextStyle.copyWith(
-                    fontSize: 13,
-                    fontWeight: medium,
-                  ),
+                      fontSize: 13, fontWeight: medium),
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10,
-                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: warna3),
-                  color: transparentColor,
-                ),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: warna3),
+                    color: transparentColor),
                 child: Text(
                   'Basketball',
                   style: subtitleTextStyle.copyWith(
-                    fontSize: 13,
-                    fontWeight: medium,
-                  ),
+                      fontSize: 13, fontWeight: medium),
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10,
-                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: warna3),
-                  color: transparentColor,
-                ),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: warna3),
+                    color: transparentColor),
                 child: Text(
                   'Hiking',
                   style: subtitleTextStyle.copyWith(
-                    fontSize: 13,
-                    fontWeight: medium,
-                  ),
+                      fontSize: 13, fontWeight: medium),
                 ),
               ),
             ],

@@ -26,11 +26,9 @@ class CheckoutCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'Converse Black Edition',
-                  style: primaryTextStyle.copyWith(fontWeight: semiBold),
-                  overflow: TextOverflow.ellipsis,
-                ),
+                Text('Converse Black Edition',
+                    style: primaryTextStyle.copyWith(fontWeight: semiBold),
+                    overflow: TextOverflow.ellipsis),
                 SizedBox(height: 2),
                 Text('Rp 876.543', style: primaryTextStyle),
               ],
